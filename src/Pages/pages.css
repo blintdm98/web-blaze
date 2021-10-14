@@ -1,0 +1,156 @@
+section{
+    color: #ffffff;
+}
+
+/*first part of Home page: Contact Us*/
+.flex-container > .box{
+    flex: 1;
+}
+
+#contactUs > .flex-container > .box:nth-child(2){
+    position: relative;
+    flex-basis: 23%;
+}
+
+#contactUs > .flex-container > .box:nth-child(2) > img{
+    width: 577,5px;
+    height: 368px;
+    border-radius: 37px;
+    align-items: inside;
+}
+#contactUs > .flex-container > .box:nth-child(2) > img:first-child{
+    position: relative;
+    opacity: 30%;
+    left: 152px;
+    border: 4px solid rgba(162, 255, 21, 0.75);
+    
+}
+#contactUs > .flex-container > .box:nth-child(2) > img:nth-child(2){
+    position: absolute;
+    opacity: 60%;
+    left: 75px;
+    top: 38px;  
+    border: 3px solid rgba(162, 255, 21, 0.75);
+}
+#contactUs > .flex-container > .box:nth-child(2) > img:nth-child(3){
+    position: absolute;
+    opacity: 80%;
+    top: 93px; 
+    left: 0px;  
+    border: 2px solid rgba(162, 255, 21, 0.75);
+    /*a bal felét skew függvénnyel kell szükiteni, forditani vagy valami*/
+}
+
+#contactUs > .flex-container > .box:first-child{
+    font-size: 64px;
+    height: 100%;
+    line-height: 78px;
+    text-align: Left;
+    vertical-align: Top;
+}
+
+bold{
+    color: var(--green);  
+}
+
+button{
+    width: 273px;
+    height: 72px;
+    top: 624px;
+    left: 103px;
+    border-radius:127px;
+    background: var(--buttonG);
+}
+
+button > bold{
+    color: #000000;
+    background: transparent;
+    font-size:40px;
+    height: 100%;
+    line-height:49px;
+    text-align: left;
+    vertical-align: top;
+    font-weight: 700;
+}
+
+#contactUs > .flex-container > .box:first-child> div> p{
+    font-size:24px;
+    line-height: 29px;
+    height: 100%;
+    text-align: left; 
+    vertical-align: top;
+}
+
+.learnMore{
+    font-size:24px;
+    line-height: 29px;
+    height: 100%;
+    text-align: center;
+    vertical-align: top;
+    padding: 100px;
+    color: rgba(162, 255, 21, 0.75);
+}
+
+.learnMore:hover{
+    color:rgba(124, 207, 0, 0.75);
+}
+
+/*Our belief*/
+#ourBelief > .flex-container > .box:first-child{
+    width: 553px;
+    height: 317px;
+    left: 78px;
+    top: 1107px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 44px;
+    vertical-align: top;
+    z-index: 1;
+}
+
+#ourBelief > .flex-container > .box:nth-child(2){
+    position: relative;
+    width: 1007px;
+    height: 458px;
+    /* top: 1050px; */
+    left: -137px;
+    border-radius: 37px 0 0 37px;
+    margin-right: -302px; 
+    background: radial-gradient(164.4% 443.02% at -43.2% 53.83%, #0E100F 40.5%, rgba(15, 16, 14, 0) 100%),url("./Images/image2bord.jpg") no-repeat center center / cover;
+    z-index: 0;
+}
+
+/*How do we do that*/
+
+#howDowe{
+    padding: 40px 0 40px 0;
+}
+
+#howDowe > .flex-container > .box:nth-child(2){
+    width: 553px;
+    height: 317px;
+    left: 78px;
+    top: 1107px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 44px;
+    vertical-align: top;
+    z-index: 1;
+}
+
+#howDowe > .flex-container > .box:first-child{
+    position: relative;
+    width: 1007px;
+    height: 456px;
+    /* top: 1050px; */
+    left: 127px;
+    /* border-radius: 37px 0 0 37px; */
+    margin-left: -143px; 
+    background:radial-gradient(164.4% 443.02% at -43.2% 53.83%, #0E100F 42.35%, rgba(15, 16, 14, 0) 100%),url("./Images/image4bord.jpg") no-repeat center center / cover;
+    transform: matrix(-1, 0, 0, -1, 0, 0);
+    z-index: 0;
+}
+
+
+
+
