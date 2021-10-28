@@ -6,7 +6,15 @@ import About from './Pages/About';
 import Contact from "./Pages/Contact";
 import Pricing from "./Pages/Pricing";
 import logo1 from "./Pages/Images/logo1.jpg"
-import logo2 from "./Pages/Images/logo2.jpg"
+import logo2 from "./Pages/Images/logo2.png"
+import google from "./Pages/Images/google.jpg"
+import instagramm from "./Pages/Images/instagramm.jpg"
+import facebook from "./Pages/Images/facebook.jpg"
+import whatsapp from "./Pages/Images/whatsapp.jpg"
+import linkedin from "./Pages/Images/linkedin.jpg"
+import promLogo from "./Pages/Images/promLogo.png"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAt, faHome, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -31,18 +39,46 @@ function App() {
           <Route path="/about" component={About}/>
           <Route path="/" component={Home}/>
         </Switch>
-        <footer id="main-footer" class="flex-container container">
-          <div class="box-1">doboz 1.</div>
-          <div class="box-2">doboz 2.</div>
-          <div class="box-3">doboz 3.</div>
-          <div class="box-4">doboz 4.</div>
-          <div class="box-5">doboz 5.</div>
+        <footer id="main-footer">
+          <div class="container">
+            <div class="box-1">
+              <img src={logo2} alt="logo2"/>
+            </div>
+            <div class="box-2">
+              <h3>Contact</h3>
+              <div>
+                <p><FontAwesomeIcon icon={faAt}></FontAwesomeIcon>info@web-blaze.ro</p>
+                <p><FontAwesomeIcon icon={faPhoneAlt}></FontAwesomeIcon>0727320140</p>
+                <p><FontAwesomeIcon icon={faHome}></FontAwesomeIcon>Romania, Targu-Mures</p>
+              </div>
+            </div>
+            <div class="box-3">
+              <h3>Check us out on</h3>
+              <p>
+                <img src={google} alt="googleLogo"/>
+                <img src={whatsapp} alt="whatsappLogo"/>
+              </p>
+              <p>
+                <img src={facebook} alt="facebookLogo"/>
+                <img src={instagramm} alt="instagrammLogo"/>
+                <img src={linkedin} alt="linkedinLogo"/>
+              </p>
+            </div>
+            <div class="box-4">
+              <p>Privacy settings</p>
+              <p>Terms & conditions</p>
+              <p>Help</p>
+            </div>
+            <div class="box-5">
+              <p>Check out our social project</p>
+              <img src={promLogo} alt="promLogo"/>
+            </div>
+          </div>
+          <div class="container"><bold class="copyright">COPYRIGHT © 2021 WEB-BLAZE ALL RIGHTS RESERVED</bold></div>
+          
         </footer>
       </Router>
-      
-      
-    
-  );
+    );
   
 }
 
