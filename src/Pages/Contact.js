@@ -19,25 +19,39 @@ export default function About(){
                     </p>
                 </div>
                 <div class="box-2">
-                <form>
-                    <label class="dropDown">
-                        <select>
-                            <option value="consulting"><Link to="/contact/relations">Public Relations</Link></option>
-                            <option value="business">Branding/Marketing</option>
-                            <option value="webdesign">Web design & development</option>
-                            <option value="development">Software development</option>
-                            <option value="relations">Business consulting</option>
-                            <option value="service">Costumer service</option>
-                        </select>
-                        {/* <Switch>
-                            <Route path="/relations" component={Relations}/>
-                        </Switch> */}
-                    </label>
-                    <label>
-
-                    </label>
-                    <input type="submit" value="Submit" />
-                </form>
+                    <form>
+                        <label class="dropDown">
+                            <div>Subject</div>
+                            <select>
+                                <option value="consulting">Public Relations</option>
+                                <option value="business">Branding/Marketing</option>
+                                <option value="webdesign">Web design & development</option>
+                                <option value="development">Software development</option>
+                                <option value="relations">Business consulting</option>
+                                <option value="service">Costumer service</option>
+                            </select>
+                        </label>
+                        <label>
+                             <div>Full name</div>
+                             <input type="text" name="name" placeholder="full name"/>
+                        </label>
+                        <label>
+                            <div>Email</div>
+                            <input type="text" name="email" placeholder="email"/>
+                        </label>
+                        <div>Message</div>
+                        <textarea placeholder="text...">
+                            
+                        </textarea>
+                        <div className="formButtons">
+                            <button className="reCaptcha"><b>reCaptcha</b></button>
+                            <div className="phoneCall">
+                                <input type="checkbox" id="phone" value="phoneCall" className="pipe"/>
+                                <label for="phone">Contact me by phone call</label>
+                            </div>
+                            <button type="submit" className="btnSend">Send</button>
+                        </div>
+                    </form>
                 
                 </div>
             </section>

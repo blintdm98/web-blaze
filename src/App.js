@@ -43,7 +43,7 @@ function App() {
             <Relations></Relations>
           </Route>
         </Switch>
-        <div className="animationArea">
+        {/* <div className="animationArea">
           <div className="boxArea">
             <li></li>
             <li></li>
@@ -52,7 +52,7 @@ function App() {
             <li></li>
             <li></li>
           </div>
-        </div>
+        </div> */}
         <footer id="main-footer">
           <div class="container">
             <div class="box-1">
