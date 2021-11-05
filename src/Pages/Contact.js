@@ -1,4 +1,6 @@
 import React from "react";
+import {Route,BrowserRouter as Router,Switch, Link} from "react-router-dom";
+
 
 export default function About(){
     return (
@@ -17,7 +19,26 @@ export default function About(){
                     </p>
                 </div>
                 <div class="box-2">
-                    doboz
+                <form>
+                    <label class="dropDown">
+                        <select>
+                            <option value="consulting"><Link to="/contact/relations">Public Relations</Link></option>
+                            <option value="business">Branding/Marketing</option>
+                            <option value="webdesign">Web design & development</option>
+                            <option value="development">Software development</option>
+                            <option value="relations">Business consulting</option>
+                            <option value="service">Costumer service</option>
+                        </select>
+                        {/* <Switch>
+                            <Route path="/relations" component={Relations}/>
+                        </Switch> */}
+                    </label>
+                    <label>
+
+                    </label>
+                    <input type="submit" value="Submit" />
+                </form>
+                
                 </div>
             </section>
         </body>

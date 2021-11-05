@@ -23,6 +23,10 @@ import {faArrowAltCircleDown,faArrowRight} from "@fortawesome/free-solid-svg-ico
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {Navigation, Pagination} from 'swiper';
 import 'swiper/swiper.min.css';
+// import 'swiper/css';
+// import 'swiper/css/navigation';
+// import 'swiper/css/pagination';
+// import 'swiper/css/scrollbar';
 
 SwiperCore.use([Navigation, Pagination]);
   
@@ -79,7 +83,7 @@ export default function About(){
             </div>
         </section>
         <section id="swiper" class="container">
-            <Swiper slidesPerView={1} spaceBetween={30} loop={true} pagination navigation={{
+            <Swiper slidesPerView={1} spaceBetween={30} loop={true} pagination={{clickable:true}} navigation={{
                 "clickable": true
                 }} navigation={true} className="mySwiper">
                 <SwiperSlide>

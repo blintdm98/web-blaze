@@ -1,3 +1,8 @@
+:root {
+  --green: #04ff0e;
+  --buttonG: linear-gradient(180deg, #00ff0a 0%, #faff00 100%);
+}
+
 section {
   color: #ffffff;
 }
@@ -224,21 +229,28 @@ button > bold {
   background-repeat: no-repeat;
   background-size: 10px;
   background-position: right;
-  margin-left: 125px;
+  margin-left: 34%;
+  margin-top: 49.3%;
+  position: absolute;
+  z-index: 2;
 }
 
 .swiper-button-prev {
   display: inline-block;
   background-image: url(./Images/arrowLeft.png);
   padding: 15px;
-  /* background-image: url(./next.svg); */
   background-repeat: no-repeat;
   background-size: 10px;
   background-position: left;
+  margin-left: 21%;
+  margin-top: 49.3%;
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
 }
-.swiper-button-prev:hover {
-  /* background: #04FF0E; */
-}
+/* .swiper-button-prev:hover {
+  /* background: #04FF0E; 
+} */
 
 .swiper-pagination-bullet {
   display: inline-block;
@@ -246,18 +258,16 @@ button > bold {
   padding: 10px;
   background-size: 10px;
   background-repeat: no-repeat;
-
-  /* position: relative;
-  top: -24px;
-  background: transparent;
-  right: -30px;
-  width: fit-content; */
 }
 .swiper-pagination-bullets {
   position: relative;
   top: -24px;
   right: -30px;
   width: fit-content;
+  margin-right: 67.6%;
+  margin-top: 52.1%;
+  position: absolute;
+  z-index: 2;
 }
 .swiper-pagination-bullet-active {
   display: inline-block;
@@ -266,13 +276,13 @@ button > bold {
   background-size: 10px;
   background-repeat: no-repeat;
 }
-/*
-.swiper-pagination-bullet-active{
-    background-image: url(./Images/swiperDot.png);
-    padding: 10px;
-    background-size: 10px;
-    background-repeat: no-repeat;
-} */
+
+.swiper-pagination-bullet-active {
+  background-image: url(./Images/swiperDot.png);
+  padding: 10px;
+  background-size: 10px;
+  background-repeat: no-repeat;
+}
 
 /*********************About Us*******************/
 /*Title*/
@@ -472,4 +482,84 @@ button > bold {
 }
 .contact > .box-2 {
   grid-row: 1;
+  margin-top: 120px;
+}
+
+select {
+  color: #fff;
+  border: 2px solid lime;
+  border-radius: 37px;
+  padding: 0.5em;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 44px;
+  /* identical to box height */
+}
+
+/*******************Pricing*****************/
+
+.offers {
+  display: grid;
+}
+.offers > .box-1-consulting {
+  font-family: Didact Gothic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 39px;
+  text-align: center;
+  opacity: 0.7;
+  margin: 0 410px 0 410px;
+  grid-row: 1;
+  grid-column: 1/4;
+}
+.offers > .box-2-consulting,
+.box-3-consulting,
+.box-4-consulting {
+  grid-row: 2;
+}
+
+.offers > .box-2-consulting {
+  grid-column: 1;
+}
+.offers > .box-3-consulting {
+  grid-column: 2;
+}
+.offers > .box-4-consulting {
+  grid-column: 3;
+  margin-top: 0;
+}
+.consultingBox {
+  border-radius: 37px;
+  background: linear-gradient(
+    180.03deg,
+    #20201f -21.97%,
+    rgba(0, 0, 0, 0.7) 99.98%
+  );
+  border: 2px solid var(--green);
+  margin: 25px 50px 25px 50px;
+  padding: 100px 0 100px 0;
+}
+
+.consultingBox > h1 {
+  background: transparent;
+  text-align: center;
+}
+.consultingBox > .firstimg {
+  background: transparent;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+.consultingBox > .secondimg {
+  background: transparent;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+.priceTitle > p {
+  text-align: left;
 }

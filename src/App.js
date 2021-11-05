@@ -5,6 +5,7 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Contact from "./Pages/Contact";
 import Pricing from "./Pages/Pricing";
+import Relations from './Pages/Relations';
 import logo1 from "./Pages/Images/logo1.jpg"
 import logo2 from "./Pages/Images/logo2.png"
 import google from "./Pages/Images/google.jpg"
@@ -38,7 +39,20 @@ function App() {
           <Route path="/pricing" component={Pricing}/>
           <Route path="/about" component={About}/>
           <Route path="/" component={Home}/>
+          <Route path="/relations">
+            <Relations></Relations>
+          </Route>
         </Switch>
+        <div className="animationArea">
+          <div className="boxArea">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </div>
+        </div>
         <footer id="main-footer">
           <div class="container">
             <div class="box-1">
