@@ -1,15 +1,15 @@
 import React from "react";
+import {Route,BrowserRouter as Router,Switch, Link} from "react-router-dom";
 import box1img from "./Images/businessconsultingimg.png";
 import box3img from "./Images/businessconsultingimage3.png";
 import box2img from "./Images/businessconsultingimage2.png";
 import fingericon from "./Images/fingericon.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHandPointUp } from '@fortawesome/free-solid-svg-icons';
+import Business from './Business';
 
 
-export default function About(){
+export default function Pricing(){
     return (
-        <body>
+        <div>
             <section class="container">
                 <div class="partTitle priceTitle">
                     <h1>The Price?</h1>
@@ -23,29 +23,33 @@ export default function About(){
                 </div>
                 <div class="box-2-consulting">
                     <div class="consultingBox">
-                        <h1>Business Consulting</h1>
+                        <Link to="/business"><h1  className="cursor">Business Consulting</h1></Link>
                         <p>blablabla</p>
-                        <img class="firstimg" src={box1img} alt="box1img"/>
-                        <img class="secondimg" src={fingericon} alt="fingericon"/>
+                        <Link to="/business">
+                            <img class="firstimg cursor" src={box1img} alt="box1img"/>
+                            <img class="secondimg cursor" src={fingericon} alt="fingericon"/>
+                        </Link>
                     </div>
                 </div>
                 <div class="box-3-consulting">
                     <div class="consultingBox">
-                        <h1>Business Consulting</h1>
+                        <Link to="/development"><h1 className="cursor">Web & Soft Development</h1></Link>
                         <p>blablabla</p>
-                        <img class="firstimg" src={box2img} alt="box2img"/>
-                        <img class="secondimg" src={fingericon} alt="fingericon"/>
+                        <Link to="/development"><img class="firstimg cursor" src={box2img} alt="box2img"/>
+                        <img class="secondimg cursor" src={fingericon} alt="fingericon"/>
+                        </Link>
                     </div>
                 </div>
                 <div class="box-4-consulting">
                 <div class="consultingBox">
-                        <h1>Business Consulting</h1>
+                        <Link to="/marketing"><h1 className="cursor">Branding and Marketing</h1></Link>
                         <p>blablabla</p>
-                        <img class="firstimg" src={box3img} alt="box3img"/>
-                        <img class="secondimg" src={fingericon} alt="fingericon"/>
+                        <Link to="/marketing"><img class="firstimg cursor" src={box3img} alt="box3img"/>
+                        <img class="secondimg cursor" src={fingericon} alt="fingericon"/>
+                        </Link>
                     </div>
                 </div>
             </section>
-        </body>
+        </div>
     )
 }

@@ -18,7 +18,7 @@ import slide5icon from "./Images/slide5iconimage.png";
 import slide6icon from "./Images/slide6iconimage.png";
 import slide7icon from "./Images/slide7iconimage.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faArrowAltCircleDown,faArrowRight} from "@fortawesome/free-solid-svg-icons";
+import {faArrowAltCircleDown} from "@fortawesome/free-solid-svg-icons";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {Navigation, Pagination} from 'swiper';
@@ -32,7 +32,7 @@ SwiperCore.use([Navigation, Pagination]);
   
 
 
-export default function About(){
+export default function Home(){
     
     return (
 

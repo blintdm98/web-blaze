@@ -5,7 +5,9 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Contact from "./Pages/Contact";
 import Pricing from "./Pages/Pricing";
-import Relations from './Pages/Relations';
+import Business from "./Pages/Business";
+import Development from "./Pages/Development";
+import Marketing from "./Pages/Marketing";
 import logo1 from "./Pages/Images/logo1.jpg"
 import logo2 from "./Pages/Images/logo2.png"
 import google from "./Pages/Images/google.jpg"
@@ -35,13 +37,13 @@ function App() {
           </nav>
         </header>
         <Switch>
+          <Route path="/marketing" component={Marketing}/>
+          <Route path="/development" component={Development}/>
+          <Route path="/business" component={Business}/>
           <Route path="/contact" component={Contact}/>
           <Route path="/pricing" component={Pricing}/>
           <Route path="/about" component={About}/>
           <Route path="/" component={Home}/>
-          <Route path="/relations">
-            <Relations></Relations>
-          </Route>
         </Switch>
         {/* <div className="animationArea">
           <div className="boxArea">
@@ -54,7 +56,7 @@ function App() {
           </div>
         </div> */}
         <footer id="main-footer">
-          <div class="container">
+          <div className="container">
             <div class="box-1">
               <img src={logo2} alt="logo2"/>
             </div>

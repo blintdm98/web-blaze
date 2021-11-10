@@ -586,6 +586,9 @@ form > div {
 .offers {
   display: grid;
 }
+.cursor {
+  cursor: pointer;
+}
 .offers > .box-1-consulting {
   font-family: Didact Gothic;
   font-style: normal;
@@ -594,7 +597,7 @@ form > div {
   line-height: 39px;
   text-align: center;
   opacity: 0.7;
-  margin: 0 410px 0 410px;
+  /* margin: 0 410px 0 410px; */
   grid-row: 1;
   grid-column: 1/4;
 }
@@ -626,18 +629,18 @@ form > div {
   padding: 100px 0 100px 0;
 }
 
-.consultingBox > h1 {
+.consultingBox > a > h1 {
   background: transparent;
   text-align: center;
 }
-.consultingBox > .firstimg {
+.consultingBox > a > .firstimg {
   background: transparent;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 75%;
 }
-.consultingBox > .secondimg {
+.consultingBox > a > .secondimg {
   background: transparent;
   display: block;
   margin-left: auto;
@@ -646,4 +649,207 @@ form > div {
 }
 .priceTitle > p {
   text-align: left;
+}
+.consultingBox a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*************BusinessConsulting***********/
+.businessTitle {
+  margin: 0 5%;
+}
+.testemonials {
+  text-align: center;
+}
+.testemonials > h2 {
+  color: var(--green);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 68px;
+}
+.testemonials p {
+  /* padding: 0 240px; */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 44px;
+}
+.theProcess h2 {
+  color: var(--green);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 78px;
+}
+.theProcess {
+  margin: 0 5%;
+}
+.processBox {
+  display: grid;
+}
+.processBox-1 {
+  grid-row: 1;
+  width: 140px;
+  height: 176px;
+  background: var(--buttonG);
+  border-radius: 27px;
+  margin-bottom: 20px;
+}
+.processBox-1 p {
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 117px;
+  background: transparent;
+  color: #000000;
+  margin: 30px 0;
+}
+.ikon1 {
+  grid-row: 1;
+}
+.ikon1 > .fa-arrow-right {
+  color: var(--green);
+  display: block;
+  width: 46px;
+  height: 39px;
+  text-align: center;
+  margin-top: 70px;
+}
+.processBox-2 {
+  grid-row: 1;
+}
+.fontforText {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 44px;
+  text-align: left;
+  margin: 0;
+}
+.processBox-3 {
+  grid-row: 1;
+}
+.processBox-4 {
+  width: 140px;
+  height: 176px;
+  background: var(--buttonG);
+  border-radius: 27px;
+  margin-bottom: 20px;
+}
+.processBox-4 p {
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 117px;
+  background: transparent;
+  color: #000000;
+  margin: 30px 0;
+}
+.ikon2 {
+  grid-row: 2;
+  grid-column: 2;
+}
+.ikon2 > .fa-arrow-right {
+  color: var(--green);
+  display: block;
+  width: 46px;
+  height: 39px;
+  text-align: center;
+  margin-top: 70px;
+}
+.ikon3 {
+  grid-row: 2;
+  grid-column: 4;
+  background: transparent;
+}
+.ikon3 > .fa-arrow-right {
+  color: var(--green);
+  display: block;
+  width: 46px;
+  height: 39px;
+  text-align: center;
+  margin-top: 70px;
+}
+.processBox-5 {
+  grid-column: 3/4;
+  grid-row: 2;
+  line-height: 39px;
+}
+.ikon4 {
+  /* grid-row: 3;
+  grid-column: 4; */
+}
+.ikon4 > .fa-arrow-right {
+  color: var(--green);
+  display: block;
+  width: 46px;
+  height: 39px;
+  text-align: center;
+  margin-top: 70px;
+}
+.processBox-7 {
+  grid-row: 3;
+  width: 140px;
+  height: 176px;
+  background: var(--buttonG);
+  border-radius: 27px;
+  margin-bottom: 20px;
+}
+.processBox-7 p {
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 117px;
+  background: transparent;
+  color: #000000;
+  margin: 30px 0;
+}
+.processBox-A {
+  grid-row: 4;
+  width: 140px;
+  height: 176px;
+  background: var(--buttonG);
+  border-radius: 27px;
+  margin-bottom: 20px;
+}
+.processBox-A p {
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 117px;
+  background: transparent;
+  color: #000000;
+  margin: 30px 0;
+}
+.processBox-B {
+  grid-row: 4;
+  grid-column: 3/6;
+  font-size: 23px;
+  line-height: 47px;
+}
+.processBox-C {
+  grid-row: 5;
+  grid-column: 5;
+}
+.ikon1,
+.ikon3,
+.ikon4 {
+  margin-left: 10px;
+}
+.processBox-C > button > p {
+  background: transparent;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  margin: 0;
+}
+.processBox-C {
+  margin-bottom: 20px;
 }
