@@ -4,7 +4,7 @@ import box1img from "./Images/businessconsultingimg.png";
 import box3img from "./Images/businessconsultingimage3.png";
 import box2img from "./Images/businessconsultingimage2.png";
 import fingericon from "./Images/fingericon.png";
-import Business from './Business';
+
 
 
 export default function Pricing(){

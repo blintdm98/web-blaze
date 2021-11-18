@@ -1,8 +1,9 @@
 import React from "react";
 import './pages.css';
-import image1 from "./Images/image1.jpg";
-import image2 from "./Images/image2.jpg";
-import image3 from "./Images/image3.jpg";
+import {BrowserRouter as Link} from "react-router-dom";
+import image1 from "./Images/image1_.png";
+import image2 from "./Images/image2_.png";
+import image3 from "./Images/image3_.png";
 import slide1bg from "./Images/slide1bgimage.jpg";
 import slide2bg from "./Images/slide2bgimage.jpg";
 import slide3bg from "./Images/slide3bgimage.jpg";
@@ -37,15 +38,17 @@ export default function Home(){
     return (
 
         <body>
-        <section id="contactUs"class="container">
-            <div class="flex-container">
-                <div class="box">
+        <section id="contactUs"className="container">
+            <div className="flex-container">
+                <div className="box">
                     <bold>/* No worries */ </bold>
-                    Just leave it to us!
-                    <div>
-                        <button>
-                            <bold>Contact us</bold>
-                        </button>
+                    Just leave it <br/> to us!
+                    <div className="btnContactus">
+                        <a href="/contact">
+                            <button>
+                                <bold>Contact us</bold>
+                            </button>
+                        </a>
                         <p>For your<bold> Blazing </bold>succes!</p>
                     </div>
                 </div>
@@ -55,10 +58,13 @@ export default function Home(){
                     <img src={image3} alt="img3"/>
                 </div>
             </div>
-            <div class="learnMore">
-                Learn more 
-                <div><FontAwesomeIcon icon={faArrowAltCircleDown}></FontAwesomeIcon></div>
-            </div>
+            <button class="learnMore">
+                <a href="#swiper">
+                    <span>Learn more
+                        <div><FontAwesomeIcon icon={faArrowAltCircleDown}></FontAwesomeIcon></div>
+                    </span>
+                </a>
+            </button>
         </section>
         <section  id="ourBelief">
             <div class="flex-container container">
