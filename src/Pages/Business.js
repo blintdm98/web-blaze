@@ -7,6 +7,23 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 export default function Development(){
   return (
     <div>
+           <div className="bgGradient"></div>
+            {/* <div className="bgGradient1"></div> */}
+            {/* <div className="ellipse5"></div> */}
+            <div className="rectangle5"></div>
+            <div className="ellipse42"></div>
+            {/* <div className="ellipse12"></div> */}
+            {/* <div className="ellipse10"></div> */}
+            <div className="ellipse7"></div>
+            <div className="ellipse4"></div>
+            <div className="ellipse11"></div>
+            {/* <div className="ellipse13"></div> */}
+            {/* <div className="ellipse9"></div> */}
+            <div className="ellipse8 businesse8"></div>
+            <div className="ellipse6"></div>
+            <div className="ellipse3"></div>
+            <div className="ellipse2"></div>
+            <div className="ellipse1"></div>
         <section className="businessTitle">
             <div className="partTitle priceTitle">
                 <h1>Business Consulting</h1>
@@ -16,11 +33,16 @@ export default function Development(){
             </div>
         </section>
         <section className="testemonials container">
-          <h2>Testemonials</h2>
-          <div>Somebody logo</div>
-          <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-             Neque tempor vitae aliquam est pellentesque.
-              Urna ultrices ornare imperdiet tortor in aliquam.”</p>
+          <div className="bgOp1">
+            <div className="gradient ">
+              <h2 className="bgtrans pricingTitles">Testemonials</h2>
+              <div className="bgtrans bcLogo">Somebody logo</div>
+              <p className="bgtrans">“Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Neque tempor vitae aliquam est pellentesque.
+                  Urna ultrices ornare imperdiet tortor in aliquam.”
+              </p>
+            </div>
+          </div>
         </section>
         <section className="theProcess">
           <h2>The Process</h2>

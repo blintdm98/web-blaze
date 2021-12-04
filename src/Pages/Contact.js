@@ -4,8 +4,25 @@ import React from "react";
 export default function Contact(){
     return (
         <body>
-            <section class="contact container">
-                <div class="box-1">
+            {/* <div className="bgGradient"></div> */}
+            {/* <div className="bgGradient1"></div> */}
+            {/* <div className="ellipse5"></div> */}
+            <div className="rectangle5"></div>
+            <div className="ellipse42"></div>
+            {/* <div className="ellipse12"></div> */}
+            {/* <div className="ellipse10"></div> */}
+            {/* <div className="ellipse7"></div> */}
+            <div className="ellipse4"></div>
+            {/* <div className="ellipse11"></div> */}
+            {/* <div className="ellipse13"></div>
+            <div className="ellipse9"></div> */}
+            {/* <div className="ellipse8"></div>
+            <div className="ellipse6"></div> */}
+            {/* <div className="ellipse3"></div> */}
+            <div className="ellipse2"></div>
+            <div className="ellipse1"></div>
+            <section className="contact container">
+                <div className="box-1">
                     <h1>Need answers?</h1>
                     <h2>Feel free contact to us!</h2>
                     <p>
@@ -17,9 +34,9 @@ export default function Contact(){
                     and on Saturday 10:00 - 14:00
                     </p>
                 </div>
-                <div class="box-2">
+                <div className="box-2">
                     <form>
-                        <label class="dropDown">
+                        <label className="dropDown">
                             <div>Subject</div>
                             <select>
                                 <option value="consulting">Public Relations</option>

@@ -23,13 +23,20 @@ import { faAt, faHome, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 
 
 function App() {
+
+  // window.onload = function () {
+  //   document.querySelector('.home').addEventListener('click', function(){
+  //     window.location.reload();
+  //     console.log('alma');
+  //   });
+  // }
   return (
     <Router>
         <header id="main-header">
           <nav class="container flex-container">
             <div class="logo"><Link to="/"><img src={logo1} alt="logo1" /></Link></div>
             <ul class="main-menu flex-container">
-              <li><Link to="/">Home</Link></li>
+              <li className="home"><Link to="/">Home</Link></li>
               <li><Link to="/about">About</Link></li> 
               <li><Link to="/contact">Contact</Link></li> 
               <li><Link to="/pricing">Pricing</Link></li> 
@@ -45,16 +52,6 @@ function App() {
           <Route path="/about" component={About}/>
           <Route path="/" component={Home}/>
         </Switch>
-        {/* <div className="animationArea">
-          <div className="boxArea">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </div>
-        </div> */}
         <footer id="main-footer">
           <div className="container">
             <div class="box-1">
@@ -90,7 +87,7 @@ function App() {
               <img src={promLogo} alt="promLogo"/>
             </div>
           </div>
-          <div class="container"><bold class="copyright">COPYRIGHT © 2021 WEB-BLAZE ALL RIGHTS RESERVED</bold></div>
+          <div class="container"><span class="copyright">COPYRIGHT © 2021 WEB-BLAZE ALL RIGHTS RESERVED</span></div>
           
         </footer>
       </Router>

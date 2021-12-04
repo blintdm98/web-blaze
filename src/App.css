@@ -3,6 +3,8 @@
 /*colors*/
 :root {
   --green: #04ff0e;
+  --skyblue: #0fffe1;
+  --yellow: #ffff00;
   --buttonG: linear-gradient(180deg, #00ff0a 0%, #faff00 100%);
 }
 
@@ -10,6 +12,26 @@
   background: #0e100f;
   font-family: "Montserrat", sans-serif;
 }
+
+.green {
+  color: var(--green);
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.skyblue {
+  color: var(--skyblue);
+}
+
+.bgtrans {
+  background: transparent;
+}
+/* html,
+body {
+  height: 100%;
+} */
 
 ul,
 li {
