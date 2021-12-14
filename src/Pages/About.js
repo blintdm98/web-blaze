@@ -113,7 +113,7 @@ export default function About(){
                         <h1>The Blazing Team</h1>
                         <h2>The Team that take care of your blazing path to success!</h2>
                     </div>
-                    <div className="team-box-5">kep</div>
+                    {/* <div className="team-box-5">kep</div> */}
                 </div>
             </section>
         </body>

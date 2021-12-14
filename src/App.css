@@ -39,7 +39,8 @@ li {
 }
 
 .container {
-  margin: 0 10%;
+  margin: 0 auto;
+  width: 1200px;
 }
 /* .animationArea {
   width: 100%;
@@ -163,6 +164,9 @@ li {
 #main-footer > div {
   display: grid;
 }
+#main-footer > .boxes {
+  margin-bottom: 10px;
+}
 .copyright {
   color: #fff;
   text-align: center;
@@ -171,10 +175,19 @@ li {
   font-size: 14px;
   line-height: 16px;
 }
+.contactTitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 0;
+}
+.footerContact > p > img {
+  padding: 0 5px 0 5px;
+}
 .box-1 {
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 30px;
 }
 .box-2 {
   grid-column: 2;
@@ -183,28 +196,50 @@ li {
   text-align: row;
 }
 
+.box-2 > h2 {
+  font-size: 36px;
+  line-height: 44px;
+}
+
 .box-3 {
   grid-column: 3;
   text-align: center;
+  margin-top: 16px;
 }
+
 .box-3 > p > img {
-  border-radius: 20px;
+  margin: 5px;
 }
 .box-3 > p {
   margin: 0;
 }
+.box-3 > .check {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+}
 .box-4 {
   grid-column: 4;
-  text-align: center;
-  margin-top: 20px;
+  text-align: left;
+  margin-top: 45px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
+.boxPadding {
+  padding: 0 27px;
 }
 .box-5 {
   grid-column: 5;
   text-align: center;
   margin-top: 20px;
 }
-
-.box-2 > h2 {
-  font-size: 36px;
-  line-height: 44px;
+.box-5 > p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
 }

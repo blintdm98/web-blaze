@@ -8,16 +8,18 @@ import Pricing from "./Pages/Pricing";
 import Business from "./Pages/Business";
 import Development from "./Pages/Development";
 import Marketing from "./Pages/Marketing";
-import logo1 from "./Pages/Images/logo1.jpg"
-import logo2 from "./Pages/Images/logo2.png"
-import google from "./Pages/Images/google.jpg"
-import instagramm from "./Pages/Images/instagramm.jpg"
-import facebook from "./Pages/Images/facebook.jpg"
-import whatsapp from "./Pages/Images/whatsapp.jpg"
-import linkedin from "./Pages/Images/linkedin.jpg"
-import promLogo from "./Pages/Images/promLogo.png"
+import logo1 from "./Pages/Images/logo1.jpg";
+import logo2 from "./Pages/Images/logo2.png";
+import google from "./Pages/Images/google.svg";
+import instagramm from "./Pages/Images/instagramm.svg";
+import facebook from "./Pages/Images/facebook.svg";
+import whatsapp from "./Pages/Images/whatsapp.svg";
+import linkedin from "./Pages/Images/linkedin.svg";
+import promLogo from "./Pages/Images/promLogo.svg";
+import email from "./Pages/Images/email.svg";
+import tel from "./Pages/Images/tel.svg";
+import address from "./Pages/Images/address.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAt, faHome, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -53,20 +55,20 @@ function App() {
           <Route path="/" component={Home}/>
         </Switch>
         <footer id="main-footer">
-          <div className="container">
-            <div class="box-1">
+          <div className="container boxes">
+            <div class="box-1 boxPadding">
               <img src={logo2} alt="logo2"/>
             </div>
-            <div class="box-2">
-              <h3>Contact</h3>
-              <div>
-                <p><FontAwesomeIcon icon={faAt}></FontAwesomeIcon>info@web-blaze.ro</p>
-                <p><FontAwesomeIcon icon={faPhoneAlt}></FontAwesomeIcon>0727320140</p>
-                <p><FontAwesomeIcon icon={faHome}></FontAwesomeIcon>Romania, Targu-Mures</p>
+            <div class="box-2 boxPadding">
+              <h3 className="contactTitle">Contact</h3>
+              <div className="footerContact">
+                <p><img src={email} alt="email"/>info@web-blaze.ro</p>
+                <p><img src={tel} alt="tel"/>0727320140</p>
+                <p><img src={address} alt="address"/>Romania, Targu-Mures</p>
               </div>
             </div>
-            <div class="box-3">
-              <h3>Check us out on</h3>
+            <div className="box-3 boxPadding">
+              <h3 className="check">Check us out <br/>on</h3>
               <p>
                 <img src={google} alt="googleLogo"/>
                 <img src={whatsapp} alt="whatsappLogo"/>
@@ -77,17 +79,17 @@ function App() {
                 <img src={linkedin} alt="linkedinLogo"/>
               </p>
             </div>
-            <div class="box-4">
+            <div className="box-4 boxPadding">
               <p>Privacy settings</p>
               <p>Terms & conditions</p>
               <p>Help</p>
             </div>
-            <div class="box-5">
+            <div className="box-5 boxPadding">
               <p>Check out our social project</p>
               <img src={promLogo} alt="promLogo"/>
             </div>
           </div>
-          <div class="container"><span class="copyright">COPYRIGHT © 2021 WEB-BLAZE ALL RIGHTS RESERVED</span></div>
+          <div className="container"><span className="copyright">COPYRIGHT © 2021 WEB-BLAZE ALL RIGHTS RESERVED</span></div>
           
         </footer>
       </Router>

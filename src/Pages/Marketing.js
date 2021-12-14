@@ -3,8 +3,8 @@ import React from 'react';
 
 import fox from "./Images/fox.png";
 import instinct from "./Images/instinct.png";
-import instagramm from "./Images/instagramm.jpg";
-import facebook from "./Images/facebook.jpg";
+import instagramm from "./Images/instagramm.svg";
+import facebook from "./Images/facebook.svg";
 
 export default function Marketing(){
   return (

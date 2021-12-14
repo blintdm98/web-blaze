@@ -19,6 +19,8 @@ import slide4icon from "./Images/slide4iconimage.png";
 import slide5icon from "./Images/slide5iconimage.png";
 import slide6icon from "./Images/slide6iconimage.png";
 import slide7icon from "./Images/slide7iconimage.png";
+import learnMore from "./Images/Learn more.svg";
+import vector from "./Images/Vector.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleDown } from "@fortawesome/free-solid-svg-icons";
 
@@ -123,10 +125,10 @@ export default function Home() {
         <body>
                 <div className="rectangle5"></div>
             <section id="contactUs" className="container">
-                <div className="flex-container">
+                <div className="flex-container noWorry">
                     <div className="box">
                         <span>/* No worries */ </span>
-                        Just leave it <br /> to us!
+                        <br/>Just leave it <br /> to us!
                         <div className="btnContactus">
                             <a href="/contact">
                                 <button>
@@ -137,38 +139,41 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="box bgtrans">
-                        <img src={image1} alt="img1" />
-                        <img src={image2} alt="img2" />
-                        <img src={image3} alt="img3" />
+                            <img src={image1} alt="img1" />
+                            <img src={image2} alt="img2" />
+                            <img src={image3} alt="img3" />
                     </div>
                 </div>
                 <button className="learnMore bgtrans">
                     <a href="#swiper">
-                        <span>Learn more
-                            <div><FontAwesomeIcon icon={faArrowAltCircleDown}></FontAwesomeIcon></div>
+                        <span>
+                            <img src={learnMore} alt="learnmore"/>
+                            <img src={vector} alt="vector" className="vector"/>
+                            {/* Learn more
+                            <div><FontAwesomeIcon icon={faArrowAltCircleDown}></FontAwesomeIcon></div> */}
                         </span>
                     </a>
                 </button>
             </section>
             <section id="ourBelief">
                 <div className="flex-container container">
-                    <div className="box bgtrans">
-                        <h1 className="bgtrans">Our belief!</h1>
-                        <p className="bgtrans">We believe that your business presence on the World Wide Web is crucial for your success.
+                    <div className="box bgtrans ">
+                        <h1 className="bgtrans">Our "Code"</h1>
+                        <p className="bgtrans firstP">We believe that <span>your business</span> presence on the World Wide Web is crucial for your <span>success. </span>
                             It represents and advertises the quality you want to provide.</p>
-                        <p className="bgtrans">That's why we are looking after the flames of your ambition and to illuminate the path to success!</p>
+                        <p className="bgtrans firstP">That's why we are looking after <span>the flames</span> of <span>your ambition</span> and to illuminate the path to <span>success!</span></p>
                     </div>
                     <div className="box"></div>
                 </div>
             </section>
             <section id="howDowe">
-                <div className="flex-container">
+                <div className="flex-container container">
                     <div className="box"></div>
                     <div className="box bgtrans">
                         <h1 className="bgtrans">How do we do that?</h1>
                         <p className="bgtrans">Very Simple!</p>
-                        <p className="bgtrans">With great quality, trending, and modern websites, that integrate themselves perfectly in your brand, expanding it to a new level at the same time.</p>
-                        <p className="bgtrans">We tell a story, the story of your brand, your business and your Succes!</p>
+                        <p className="bgtrans firstP">With great <span>quality</span>, <span>trending</span>, and <span>modern</span> websites, that integrate themselves perfectly in your brand, expanding it to a new level at the same time.</p>
+                        <p className="bgtrans firstP"><span>We tell a story</span>, the story of your brand, your business and your <span>Succes!</span></p>
                     </div>
                 </div>
             </section>
@@ -300,7 +305,7 @@ export default function Home() {
                 <button className="slider__btn slider__btn--right">&rarr;</button>
                 <div className="dots"></div>
             </div>
-            <section className="container ourPartner bgtrans"><div className="bgtrans">Our partner</div></section>
+            {/* <section className="container ourPartner bgtrans"><div className="bgtrans">Our partner</div></section> */}
             <section className="ellipses">
                 {/* <div className="bgGradient"></div>
                 <div className="bgGradient1"></div> */}

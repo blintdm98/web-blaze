@@ -18,36 +18,32 @@ section {
 
 #contactUs > .flex-container > .box:nth-child(2) {
   position: relative;
-  flex-basis: 23%;
+  /* flex-basis: 23%; */
+  padding-right: 120px;
 }
 
-#contactUs > .flex-container > .box:nth-child(2) > img {
-  width: 577, 5px;
-  height: 368px;
-  border-radius: 37px;
-  align-items: inside;
-}
 #contactUs > .flex-container > .box:nth-child(2) > img:first-child {
   position: relative;
   background: transparent;
-  opacity: 30%;
+  opacity: 0.7;
   left: 152px;
-  /* border: 4px solid rgba(162, 255, 21, 0.75); */
 }
 #contactUs > .flex-container > .box:nth-child(2) > img:nth-child(2) {
   position: absolute;
-  opacity: 60%;
+  opacity: 0.8;
   background: transparent;
   left: 75px;
   top: 38px;
-  /* border: 3px solid rgba(162, 255, 21, 0.75); */
 }
 #contactUs > .flex-container > .box:nth-child(2) > img:nth-child(3) {
   position: absolute;
-  opacity: 80%;
+  opacity: 0.9;
   background: transparent;
   top: 93px;
   left: 0px;
+}
+.noWorry {
+  margin-top: 100px;
 }
 
 #contactUs > .flex-container > .box:first-child {
@@ -98,7 +94,7 @@ button > span {
   text-align: center;
   vertical-align: top;
   padding: 100px;
-  scroll-behavior: smooth;
+
   background: transparent;
   margin-left: auto;
   margin-right: auto;
@@ -109,6 +105,11 @@ button > span {
 .learnMore > span {
   cursor: pointer;
 }
+.vector {
+  display: block;
+  margin: 2px auto;
+  width: 40px;
+}
 
 .learnMore > span:hover {
   color: #08a00d;
@@ -116,9 +117,17 @@ button > span {
 .learnMore > a {
   text-decoration: none;
   color: var(--green);
+  /* scroll-behavior: smooth; */
+}
+html {
+  scroll-behavior: smooth;
 }
 
 /*Our belief*/
+#ourBelief {
+  height: 340px;
+}
+
 #ourBelief > .flex-container > .box:first-child {
   width: 553px;
   height: 317px;
@@ -126,19 +135,35 @@ button > span {
   top: 1107px;
   text-align: center;
   font-size: 24px;
-  line-height: 44px;
+  line-height: 30px;
+  font-weight: 400px;
   vertical-align: top;
   z-index: 1;
+}
+
+#ourBelief > .flex-container > .box:first-child > .firstP {
+  padding: 0 100px;
+}
+
+#ourBelief > .flex-container > .box:first-child > .firstP > span {
+  font-weight: bold;
+  color: #fff;
+}
+#ourBelief > .flex-container > .box:first-child > h1 {
+  font-weight: bold;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
 }
 
 #ourBelief > .flex-container > .box:nth-child(2) {
   position: relative;
   width: 1007px;
-  height: 458px;
+  height: 340px;
   /* top: 1050px; */
   left: -137px;
   border-radius: 37px 0 0 37px;
-  margin-right: -302px;
+  margin-right: -297px;
   background: radial-gradient(
       164.4% 443.02% at -43.2% 53.83%,
       #0e100f 40.5%,
@@ -151,7 +176,8 @@ button > span {
 /*How do we do that*/
 
 #howDowe {
-  padding: 40px 0 40px 0;
+  padding: 36px 0;
+  height: 340px;
 }
 
 #howDowe > .flex-container > .box:nth-child(2) {
@@ -161,19 +187,29 @@ button > span {
   top: 1107px;
   text-align: center;
   font-size: 24px;
-  line-height: 44px;
+  line-height: 30px;
+  font-weight: 400px;
   vertical-align: top;
   z-index: 1;
+}
+
+#howDowe > .flex-container > .box:nth-child(2) > .firstP {
+  padding: 0 100px;
+}
+
+#howDowe > .flex-container > .box:nth-child(2) > .firstP > span {
+  font-weight: bold;
+  color: #fff;
 }
 
 #howDowe > .flex-container > .box:first-child {
   position: relative;
   width: 1007px;
-  height: 456px;
+  height: 372px;
   /* top: 1050px; */
   left: 127px;
   /* border-radius: 37px 0 0 37px; */
-  margin-left: -143px;
+  margin-left: -288px;
   background: radial-gradient(
       164.4% 443.02% at -43.2% 53.83%,
       #0e100f 42.35%,
@@ -1068,7 +1104,7 @@ form > div {
 }
 .rectangle5 {
   position: absolute;
-  width: 1300.15px;
+  width: 1250px;
   height: 595.95px;
   left: -478.66px;
   top: -205px;
@@ -1159,6 +1195,7 @@ form > div {
 
 body {
   overflow-x: hidden;
+  margin: 0;
 }
 
 .ellipse13 {

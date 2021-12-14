@@ -49,7 +49,7 @@ export default function Development(){
             <div className="bgOp2">
                 <div className="gradient">
                     <h2 className="pricingTitles bgtrans">Our Projects</h2>
-                    <div className="bgtrans projects">Kovacs Stables</div>
+                    <div className="bgtrans projects"></div>
                     <p className="bgtrans">“Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Neque tempor vitae aliquam est pellentesque.
                     Urna ultrices ornare imperdiet tortor in aliquam.”</p>
