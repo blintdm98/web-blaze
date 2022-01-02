@@ -21,6 +21,8 @@ import slide6icon from "./Images/slide6iconimage.png";
 import slide7icon from "./Images/slide7iconimage.png";
 import learnMore from "./Images/Learn more.svg";
 import vector from "./Images/Vector.svg";
+import slidervectorL from "./Images/slidervectorLeft.svg";
+import slidervectorR from "./Images/slidervectorRight.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleDown } from "@fortawesome/free-solid-svg-icons";
 
@@ -36,19 +38,9 @@ SwiperCore.use([Navigation, Pagination]);
 
 
 
-export default function Home() {
-    //slider
-    // window.location.reload();
-
-    
-
-    window.onload = function () {
-
-        // document.getElementById('home').addEventListener('click', function(){
-        //     window.location.reload();
-        //     console.log('alma');
-        //   });
-            
+// export default function Home() {
+    export default class Home extends React.Component {
+        componentDidMount(){     
         const slides = document.querySelectorAll('.slide');
         const btnLeft = document.querySelector('.slider__btn--left');
         const btnRight = document.querySelector('.slider__btn--right');
@@ -120,7 +112,7 @@ export default function Home() {
             }
           });
     }
-
+    render(){
     return (
         <body>
                 <div className="rectangle5"></div>
@@ -131,11 +123,11 @@ export default function Home() {
                         <br/>Just leave it <br /> to us!
                         <div className="btnContactus">
                             <a href="/contact">
-                                <button>
+                                <button className="btnProp">
                                     <span>Contact us</span>
                                 </button>
                             </a>
-                            <p>For your<span> Blazing </span>succes!</p>
+                            <p>For your<span className="blazing"> Blazing </span>succes!</p>
                         </div>
                     </div>
                     <div className="box bgtrans">
@@ -181,14 +173,14 @@ export default function Home() {
                 <div className="slide slide1 bgtrans">
                     <div className="box bgtrans">
                         <h1 className="bgtrans">Web Design</h1>
-                        <p className="bgtrans">Web design is much more than creating a design that is fresh and appealing.
+                        <p className="bgtrans sliderPar">Web design is much more than creating a design that is fresh and appealing.
                             Any website that is to become successful as a sales and marketing tool needs to be intuitive and easy-to-use for the first time and recurrent visitors.
                         </p>
                     </div>
                     <div className="box">
                         <div>
                             <img src={slide1icon} alt="slide1icon" />
-                            <button>
+                            <button className="btnProp">
                                 Get an offer
                             </button>
                         </div>
@@ -200,12 +192,12 @@ export default function Home() {
                 <div className="slide slide1 bgtrans">
                 <div className="box bgtrans">
                             <h1 className="bgtrans">Business Consulting</h1>
-                            <p className="bgtrans">We offer high quality modular business consulting that helps with every aspect of administration, business and brand growth, marketing, general and human resource management. We also offer general business growth consulting in two modules and business evaluation.</p>
+                            <p className="bgtrans sliderPar">We offer high quality modular business consulting that helps with every aspect of administration, business and brand growth, marketing, general and human resource management. We also offer general business growth consulting in two modules and business evaluation.</p>
                         </div>
                         <div className="box">
                             <div>
                                 <img src={slide2icon} alt="slide2icon"/>
-                                <button>
+                                <button className="btnProp">
                                         Get an offer
                                 </button>
                             </div>
@@ -216,7 +208,7 @@ export default function Home() {
                 <div className="slide slide1 bgtrans">
                     <div className="box bgtrans">
                         <h1 className="bgtrans">Branding</h1>
-                        <p className="bgtrans">We bring your dreams to life!
+                        <p className="bgtrans sliderPar">We bring your dreams to life!
                             Our team of marketing and business experts will help you shape your business' 
                             identity until it exceeds every single expectation of yours!
                         </p>
@@ -224,7 +216,7 @@ export default function Home() {
                     <div className="box">
                         <div>
                             <img src={slide3icon} alt="slide3icon"/>
-                            <button>
+                            <button className="btnProp">
                                  Get an offer     
                             </button>
                         </div>
@@ -235,14 +227,14 @@ export default function Home() {
                 <div className="slide slide1 bgtrans">
                 <div className="box bgtrans">
                             <h1 className="bgtrans">Ecomerce</h1>
-                            <p className="bgtrans">We specialize in scalable e-commerce sites that are easy for our clients to update,
+                            <p className="bgtrans sliderPar">We specialize in scalable e-commerce sites that are easy for our clients to update,
                                  with user-friendly product management, integration with a range of payment systems
                                  , and a fully secure customer shopping experience.</p>
                         </div>
                         <div className="box">
                             <div>
                                 <img src={slide4icon} alt="slide4icon"/>
-                                <button>
+                                <button className="btnProp">
                                         Get an offer
                                         
                                 </button>
@@ -254,14 +246,14 @@ export default function Home() {
                 <div className="slide slide1 bgtrans">
                 <div className="box bgtrans">
                             <h1 className="bgtrans">CRM</h1>
-                            <p className="bgtrans">The CRM system has the role of managing external activities of a company, regarding clients, prospects and business partners,
+                            <p className="bgtrans sliderPar">The CRM system has the role of managing external activities of a company, regarding clients, prospects and business partners,
                                  as well as the internal ones, related to employees and departments,
                                   contributing towards the implementation of an integrated CRM strategy.</p>
                         </div>
                         <div className="box">
                             <div>
                                 <img src={slide5icon} alt="slide7icon"/>
-                                <button>
+                                <button className="btnProp">
                                         Get an offer
                                         
                                 </button>
@@ -273,14 +265,14 @@ export default function Home() {
                 <div className="slide slide1 bgtrans">
                 <div className="box bgtrans">
                             <h1 className="bgtrans">ERP</h1>
-                            <p className="bgtrans">An enterprise resource planning
+                            <p className="bgtrans sliderPar">An enterprise resource planning
                                  system helps organizations to manage business functions and streamline
                                   operations with a centralized database and a user-friendly interface.</p>
                         </div>
                         <div className="box">
                             <div>
                                 <img src={slide6icon} alt="slide5icon"/>
-                                <button>
+                                <button className="btnProp">
                                         Get an offer
                                       
                                 </button>
@@ -292,7 +284,7 @@ export default function Home() {
                 <div className="slide slide1 bgtrans">
                 <div className="box bgtrans">
                             <h1 className="bgtrans">Marketing</h1>
-                            <p className="bgtrans">Marketing is a thing...</p>
+                            <p className="bgtrans sliderPar">Marketing is a thing...</p>
                         </div>
                         <div className="box">
                             <div className="slide7box-2">
@@ -301,8 +293,8 @@ export default function Home() {
                             <img src={slide7bg} alt="slide6bg"/>
                         </div>
                 </div>
-                <button className="slider__btn slider__btn--left">&larr;</button>
-                <button className="slider__btn slider__btn--right">&rarr;</button>
+                <button className="slider__btn slider__btn--left bgtrans"><img src={slidervectorL} alt="slidervectorL" className="bgtrans"/></button>
+                <button className="slider__btn slider__btn--right bgtrans"><img src={slidervectorR} alt="slidervectorR" className="bgtrans"/></button>
                 <div className="dots"></div>
             </div>
             {/* <section className="container ourPartner bgtrans"><div className="bgtrans">Our partner</div></section> */}
@@ -327,6 +319,7 @@ export default function Home() {
         </body>
 
     )
+            }
 
 }
 

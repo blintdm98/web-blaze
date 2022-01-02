@@ -18,7 +18,7 @@ export default function Marketing(){
             {/* <div className="ellipse10"></div> */}
             <div className="ellipse7"></div>
             <div className="ellipse4"></div>
-            <div className="ellipse11"></div>
+            {/* <div className="ellipse11"></div> */}
             {/* <div className="ellipse13"></div> */}
             {/* <div className="ellipse9"></div> */}
             <div className="ellipse8 marketing8"></div>
@@ -62,7 +62,7 @@ export default function Marketing(){
               <img src={facebook} alt="bmFacebook"/>
               <img src={instagramm} alt="bmInstagramm"/>
             </div>
-            <button className="bmBtn">Contact us</button>
+            <button className="bmBtn btnProp">Contact us</button>
         </section>
     </div>
         

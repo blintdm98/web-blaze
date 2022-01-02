@@ -1,7 +1,53 @@
 import React from "react";
 
+import uploadimage from "./Images/uploadImage.svg";
+import uploadvector from "./Images/uploadVector.svg";
+import list from "./Images/list.svg";
+import downvector from "./Images/downvector.svg";
+import tel from "./Images/tel.svg";
+import pipe from "./Images/pipe.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
-export default function Contact(){
+// export default function Contact(){
+    export default class Contact extends React.Component {
+    
+        state={
+            subject:''
+        };
+    
+    handleChange(event) {
+        this.setState({ subject: document.getElementById("subject").value });
+        // console.log(this.state);
+      }
+    componentDidMount(){
+        const pipeIcon = document.querySelector('.pipeIcon');
+        const pipe = document.querySelector('.pipeArea');
+        const contactText = document.querySelector('.contactText');
+        const inputNumber = document.querySelector('.inputNumber');
+        const phoneScript = document.querySelector('.phoneScript');
+        let pipeinout = false;
+
+        const openPhone = function(){
+            if(!pipeinout){
+                pipeIcon.classList.remove('hidden');
+                contactText.classList.add('hidden');
+                inputNumber.classList.remove('hidden');
+                phoneScript.style.border = '2px solid var(--green)';
+                pipeinout = true;
+            }
+            else{
+                pipeIcon.classList.add('hidden');
+                contactText.classList.remove('hidden');
+                inputNumber.classList.add('hidden');
+                phoneScript.style.border = 'none';
+                pipeinout = false;
+
+            }
+        }
+        pipe.addEventListener('click', openPhone);
+    }
+render(){
     return (
         <body>
             {/* <div className="bgGradient"></div> */}
@@ -34,38 +80,124 @@ export default function Contact(){
                     and on Saturday 10:00 - 14:00
                     </p>
                 </div>
-                <div className="box-2">
-                    <form>
-                        <label className="dropDown">
-                            <div>Subject</div>
-                            <select>
-                                <option value="consulting">Public Relations</option>
-                                <option value="business">Branding/Marketing</option>
-                                <option value="webdesign">Web design & development</option>
-                                <option value="development">Software development</option>
-                                <option value="relations">Business consulting</option>
-                                <option value="service">Costumer service</option>
+                <div className="box-2 bgtrans">
+                    <form className="bgtrans">
+                        <label className="dropDown bgtrans">
+                            <div className="bgtrans">Subject</div>
+                            <select id="subject" className="bgtrans" onChange={ this.handleChange.bind(this) }>
+                                <option value="public">Public Relations</option>
+                                <option value="branding">Branding/Marketing</option>
+                                <option value="public">Web design & development</option>
+                                <option value="public">Software development</option>
+                                <option value="business">Business consulting</option>
+                                <option value="public">Customer service</option>
                             </select>
                         </label>
-                        <label>
-                             <div>Full name</div>
-                             <input type="text" name="name" placeholder="full name"/>
-                        </label>
-                        <label>
-                            <div>Email</div>
-                            <input type="text" name="email" placeholder="email"/>
-                        </label>
-                        <div>Message</div>
-                        <textarea placeholder="text...">
-                            
-                        </textarea>
-                        <div className="formButtons">
-                            <button className="reCaptcha"><b>reCaptcha</b></button>
-                            <div className="phoneCall">
-                                <input type="checkbox" id="phone" value="phoneCall" className="pipe"/>
-                                <label for="phone">Contact me by phone call</label>
+                        {this.state.subject === "business" ? (
+                        //business value
+                        <div className="bgtrans public">
+                            <label className="bgtrans">
+                                <div className="bgtrans">Full name</div>
+                                <input type="text" name="name" placeholder="full name" className="bgtrans"/>
+                            </label>
+                            <label className="bgtrans">
+                            <div className="bgtrans">Email</div>
+                            <input className="bgtrans" type="text" name="email" placeholder="email"/>
+                            </label>
+                            <label className="bgtrans">
+                            <div className="bgtrans">Business name</div>
+                            <input className="bgtrans" type="text" name="businessname" placeholder="business name"/>
+                            </label>
+                            <span className="bgtrans block">Forms</span>
+                            <div className="bgtrans plans">
+                                <div className="plansbox">
+                                    <span className="bgtrans">Business Plan</span>
+                                    <div className="bgtrans plansgrid">
+                                        <img src={list} alt="list" className="list"/>
+                                        <img src={downvector} alt="downvector" className="planvectors"/>
+                                    </div>
+                                </div>
+                                <div className="plansbox">
+                                    <span className="bgtrans">Financiar Plan</span>
+                                    <div className="bgtrans plansgrid">
+                                        <img src={list} alt="list" className="list"/>
+                                        <img src={uploadvector} alt="uploadvector" className="planvectors"/>
+                                    </div>
+                                </div>
                             </div>
-                            <button type="submit" className="btnSend">Send</button>
+                        </div>) : (
+                            //branding value
+                            this.state.subject === "branding" ? (
+                            <div className="bgtrans public">
+                                <label className="bgtrans">
+                                    <div className="bgtrans">Full name</div>
+
+                                    <input type="text" name="name" placeholder="full name" className="bgtrans"/>
+                                </label>
+                                <label className="bgtrans">
+                                <div className="bgtrans">Email</div>
+                                <input className="bgtrans" type="text" name="email" placeholder="email"/>
+                                </label>
+                                <label className="bgtrans">
+                                <div className="bgtrans">Business name</div>
+                                <input className="bgtrans" type="text" name="businessname" placeholder="business name"/>
+                                </label>
+                                <div className="bgtrans branMarkdown">
+                                    <label className="bgtrans websiteUrl">
+                                    <div className="bgtrans">Website url</div>
+                                    <input className="bgtrans" type="text" name="weburl" placeholder="website url"/>
+                                    </label>
+                                    <label className="bgtrans socialmediaUrl">
+                                    <div className="bgtrans">Social Media url</div>
+                                    <input className="bgtrans" type="text" name="socialmedia" placeholder="social media url"/>
+                                    </label>
+                                    <label className="bgtrans files">
+                                        <div className="bgtrans">Files</div>
+                                        <div className="bgtrans fileUpload">
+                                            <label className="bgtrans fileUploadlabel">
+                                                <span className="bgtrans uploadsspan">Logo/Mockup</span>
+                                                <img  className="bgtrans imgFirst" src={uploadimage} alt={uploadimage}/>
+                                                <img src={uploadvector} alt={uploadvector} className="bgtrans imgSecond"/>
+                                            </label>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>) : (
+                            //public value
+                            <div className="bgtrans public">
+                                <label className="bgtrans">
+                                    <div className="bgtrans">Full name</div>
+
+                                    <input type="text" name="name" placeholder="full name" className="bgtrans"/>
+                                </label>
+                                <label className="bgtrans">
+                                <div className="bgtrans">Email</div>
+                                <input className="bgtrans with-border" type="text" name="email" placeholder="email"/>
+                                </label>
+                                <div className="bgtrans">Message</div>
+                                <textarea className="bgtrans" placeholder="text..."></textarea>
+                            </div>
+                        ))
+                        }
+                        <div className="formButtons bgtrans">
+                            <button className="reCaptcha"><b>reCaptcha</b></button>
+                            <div className="phoneCall bgtrans">
+                                <div className="phoneScript bgtrans">
+                                    <div className="pipeArea">
+                                        {/* <img src={pipe} alt="pipe"/> */}
+                                        <FontAwesomeIcon icon={faCheck} className="pipeIcon hidden"></FontAwesomeIcon>
+                                    </div>
+                                    <div className="phone bgtrans">
+                                        <span className="bgtrans contactText">Contact me by phone call</span>
+                                        <div className="bgtrans inputNumber hidden">
+                                            <img src={tel} alt="tel" className="bgtrans"/>
+                                            <span className="bgtrans">+40</span>
+                                            <input className="bgtrans" type="text" name="phone" placeholder="745678910"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" className="btnSend btnProp">Send</button>
                         </div>
                     </form>
                 
@@ -73,4 +205,5 @@ export default function Contact(){
             </section>
         </body>
     )
+    }
 }

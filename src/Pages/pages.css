@@ -54,11 +54,21 @@ section {
   vertical-align: Top;
 }
 
-span {
+#contactUs > .flex-container > .box:first-child > span {
+  color: var(--green);
+}
+.blazing {
   color: var(--green);
 }
 
-button {
+/* button {
+  border-radius: 127px;
+  background: var(--buttonG);
+  text-align: center;
+  cursor: pointer;
+} */
+
+.btnProp {
   border-radius: 127px;
   background: var(--buttonG);
   text-align: center;
@@ -316,7 +326,7 @@ html {
 
 .slider__btn {
   position: absolute;
-  top: 94%;
+  top: 80%;
   z-index: 10;
   border: none;
   font-family: inherit;
@@ -330,28 +340,33 @@ html {
 }
 
 .slider__btn--left {
-  left: 38%;
+  left: 18%;
   transform: translate(-50%, -50%);
 }
 
 .slider__btn--right {
-  right: 38%;
+  right: 62%;
   transform: translate(50%, -50%);
 }
 
 .dots {
-  top: 94%;
+  top: 79.3%;
   position: absolute;
   bottom: 5%;
-  left: 50%;
+  left: 28%;
   transform: translateX(-50%);
   display: flex;
+  background: transparent;
+}
+
+.dots.button {
+  background-color: #fff;
 }
 
 .dots__dot {
   border: none;
   background-color: #fff;
-  opacity: 0.4;
+  /* opacity: 0.4; */
   height: 1rem;
   width: 1rem;
   border-radius: 50%;
@@ -368,9 +383,11 @@ html {
 }
 
 .dots__dot--active {
-  /* background-color: #fff; */
-  background-color: var(--buttonG);
-  opacity: 1;
+  background-color: var(--green);
+}
+
+.sliderPar {
+  padding: 0 5px;
 }
 
 /*********************About Us*******************/
@@ -572,26 +589,143 @@ html {
 .contact > .box-2 {
   grid-row: 1;
   margin-top: 120px;
+  z-index: 10;
 }
 
 .dropDown > select {
   color: #fff;
-  border: 2px solid lime;
+  border: 2px solid var(--green);
   border-radius: 37px;
-  padding: 0.5em;
+  padding: 0.5em 30px;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 44px;
   /* identical to box height */
+
+  -webkit-appearance: none;
+  background: transparent;
+  background-image: url("Images/selectVector.svg");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 21px;
 }
+
 .box-2 > form {
   display: grid;
 }
-.box-2 > form > label {
+.box-2 > form > .public > label {
   margin-bottom: 5px;
 }
-.box-2 > form > label:nth-child(2) > input {
+.box-2 > form > .public > label:first-child > input {
+  color: #fff;
+  border: 2px solid lime;
+  border-radius: 37px;
+  padding: 0.5em;
+  width: 520px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 32px;
+  /* identical to box height */
+}
+.box-2 > form > .public > label:nth-child(2) > input {
+  color: #fff;
+  border: 2px solid lime;
+  border-radius: 37px;
+  padding: 0.5em;
+  width: 520px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 32px;
+  /* identical to box height */
+}
+.box-2 > form > .public > label:nth-child(3) > input {
+  color: #fff;
+  /* border-image: var(--buttonG) 1; linear gradiens border*/
+  border: 2px solid lime;
+  border-radius: 37px;
+  padding: 0.5em;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 32px;
+  width: 520px;
+
+  /* identical to box height */
+}
+.plans {
+  display: grid;
+}
+.plans > .plansbox:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.plans > .plansbox {
+  border: 2px solid lime;
+  border-radius: 37px;
+  background: transparent;
+  text-align: center;
+  margin: 5px 10px;
+}
+.plansbox > span {
+  opacity: 0.4;
+}
+.block {
+  display: block;
+}
+.list {
+  display: block;
+  background: transparent;
+  margin: 10px 0 10px 55px;
+}
+.planvectors {
+  grid-row: 1;
+  grid-column: 2;
+  margin: auto 5px;
+  background: transparent;
+  cursor: pointer;
+}
+.plansgrid {
+  display: grid;
+}
+.branMarkdown {
+  display: grid;
+}
+.websiteUrl {
+  grid-row: 1;
+}
+.websiteUrl > input {
+  color: #fff;
+  border: 2px solid lime;
+  border-radius: 37px;
+  padding: 0.5em 5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 32px;
+}
+.socialmediaUrl {
+  grid-row: 2;
+}
+.socialmediaUrl > input {
+  color: #fff;
+  border: 2px solid lime;
+  border-radius: 37px;
+  padding: 0.5em 5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 32px;
+}
+.files {
+  grid-column: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.files > .fileUpload {
   color: #fff;
   border: 2px solid lime;
   border-radius: 37px;
@@ -599,21 +733,29 @@ html {
   font-style: normal;
   font-weight: normal;
   font-size: 26px;
-  line-height: 44px;
-  /* identical to box height */
+  line-height: 32px;
 }
-.box-2 > form > label:nth-child(3) > input {
-  color: #fff;
-  border: 2px solid lime;
-  border-radius: 37px;
-  padding: 0.5em;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 26px;
-  line-height: 44px;
-  /* identical to box height */
+.fileUploadlabel {
+  display: grid;
 }
-.box-2 > form > textarea {
+.uploadsspan {
+  margin-bottom: 5px;
+  opacity: 0.5;
+}
+.imgFirst {
+  /* display: block; */
+  grid-row: 3;
+  grid-column: 1;
+  cursor: pointer;
+}
+.imgSecond {
+  grid-row: 3;
+  grid-column: 2;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.box-2 > form > .public > textarea {
   color: #fff;
   border: 2px solid lime;
   border-radius: 37px;
@@ -623,6 +765,7 @@ html {
   font-size: 26px;
   line-height: 44px;
   margin-bottom: 10px;
+  width: 520px;
   /* identical to box height */
 }
 label,
@@ -653,6 +796,8 @@ form > div {
   font-size: 48px;
   line-height: 59px;
   margin-top: 80px;
+  height: 65px;
+  width: 220px;
 }
 .formButtons {
   display: grid;
@@ -666,10 +811,65 @@ form > div {
   grid-row: 1;
   margin-top: 20px;
 }
+.phoneCall > div > .phone {
+  display: inline-block;
+  grid-row: 1;
+  grid-column: 2;
+  margin-top: 3px;
+}
+.phone > div > input {
+  color: #fff;
+  border-radius: 37px;
+  /* padding: 0.5em 115px; */
+  width: 150px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 32px;
+}
+.phoneScript {
+  display: grid;
+  /* border: 2px solid var(--green); */
+  border-radius: 17px;
+  padding: 5px;
+  border-radius: 30px;
+}
+.pipeArea {
+  grid-row: 1;
+  grid-column: 1;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border-radius: 17px;
+  border: 2px solid var(--green);
+  display: inline-block;
+  cursor: pointer;
+}
 .pipe {
   border: 1px solid #04ff0e;
 }
-
+.svg-inline--fa {
+  background: transparent;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 29px;
+}
+.inputNumber {
+  padding-right: 30px;
+}
+.inputNumber > .bgtrans {
+  padding: 0 5px;
+}
+.inputNumber > span {
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+}
+.with-border {
+  border-image: var(--buttonG) 1;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 17px;
+}
 /*******************Pricing*****************/
 
 .offers {
@@ -705,6 +905,7 @@ form > div {
 .offers > .box-4-consulting {
   grid-column: 3;
   margin-top: 0;
+  z-index: 1;
 }
 .consultingBox {
   border-radius: 37px;

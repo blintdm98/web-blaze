@@ -54,9 +54,9 @@ export default function Pricing(){
                         </Link>
                     </div>
                 </div>
-                <div className="box-4-consulting">
-                <div className="consultingBox">
-                        <Link to="/marketing"><h1 className="cursor">Branding and Marketing</h1></Link>
+                <div className="box-4-consulting bgtrans">
+                <div className="consultingBox ">
+                        <Link to="/marketing"><h1 className="cursor bgtrans">Branding and Marketing</h1></Link>
                         <p>blablabla</p>
                         <Link to="/marketing"><img className="firstimg cursor" src={box3img} alt="box3img"/>
                         <img className="secondimg cursor" src={fingericon} alt="fingericon"/>

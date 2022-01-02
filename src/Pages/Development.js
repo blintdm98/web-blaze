@@ -116,7 +116,7 @@ export default function Development(){
                 </div>
                 <img src={iconimage9} alt="wb6icon"/>
             </div>
-            <button className="wdBtn">Contact us</button>
+            <button className="wdBtn btnProp">Contact us</button>
         </section>
     </div>
         

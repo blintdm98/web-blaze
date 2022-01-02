@@ -97,7 +97,7 @@ export default function Development(){
               B2B connections and be part of our monthly gatherings.
             </div>
             <div className="processBox-C">
-              <button><p>Contact us</p></button>
+              <button className="btnProp"><p>Contact us</p></button>
             </div>
           </div>
         </section>
