@@ -73,6 +73,7 @@ section {
   background: var(--buttonG);
   text-align: center;
   cursor: pointer;
+  z-index: 1;
 }
 
 button > span {

@@ -180,9 +180,10 @@ SwiperCore.use([Navigation, Pagination]);
                     <div className="box">
                         <div>
                             <img src={slide1icon} alt="slide1icon" />
-                            <button className="btnProp">
-                                Get an offer
-                            </button>
+                                <button className="btnProp">
+                                        Get an offer
+                                </button>
+                            
                         </div>
                         
                         <img src={slide1bg} alt="slide1bg" />

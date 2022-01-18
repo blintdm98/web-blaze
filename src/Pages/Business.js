@@ -16,14 +16,14 @@ export default function Development(){
             {/* <div className="ellipse10"></div> */}
             <div className="ellipse7"></div>
             <div className="ellipse4"></div>
-            <div className="ellipse11"></div>
+            {/* <div className="ellipse11"></div> */}
             {/* <div className="ellipse13"></div> */}
             {/* <div className="ellipse9"></div> */}
             <div className="ellipse8 businesse8"></div>
             <div className="ellipse6"></div>
             <div className="ellipse3"></div>
             <div className="ellipse2"></div>
-            <div className="ellipse1"></div>
+            <div className="ellipse1 hidden"></div>
         <section className="businessTitle">
             <div className="partTitle priceTitle">
                 <h1>Business Consulting</h1>

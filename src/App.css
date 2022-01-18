@@ -207,11 +207,18 @@ li {
   margin-top: 16px;
 }
 
-.box-3 > p > img {
+.box-3 > p > a > img {
   margin: 5px;
 }
-.box-3 > p {
+.box-3 > p > a {
   margin: 0;
+}
+.box-3 > p:nth-child(2) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.box-3 > p:nth-child(3) {
+  margin-top: 0;
 }
 .box-3 > .check {
   font-style: normal;

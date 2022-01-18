@@ -25,7 +25,7 @@ export default function Marketing(){
             <div className="ellipse6"></div>
             <div className="ellipse3"></div>
             <div className="ellipse2"></div>
-            <div className="ellipse1"></div>
+            <div className="ellipse1 hidden"></div>
       <section className="container">
             <div className="partTitle priceTitle">
                 <h1>Branding and Marketing</h1>
@@ -48,8 +48,10 @@ export default function Marketing(){
             </div>
           </div>
             <div className="bmLogos">
-              <img src={facebook} alt="bmFacebook"/>
-              <img src={instagramm} alt="bmInstagramm"/>
+            <a href="https://www.facebook.com/webblaze.romania/">
+                  <img src={facebook} alt="facebookLogo"/>
+                </a>
+                <a href="https://www.instagram.com/webblaze.romania/"><img src={instagramm} alt="instagrammLogo"/></a>
             </div>
             <h2 className="bmTitle">Marketing</h2>
             <p>Instinct Visuals</p>
@@ -59,8 +61,10 @@ export default function Marketing(){
               Urna ultrices ornare imperdiet tortor in aliquam.”
             </p>
             <div className="bmLogos">
-              <img src={facebook} alt="bmFacebook"/>
-              <img src={instagramm} alt="bmInstagramm"/>
+            <a href="https://www.facebook.com/webblaze.romania/">
+                  <img src={facebook} alt="facebookLogo"/>
+                </a>
+                <a href="https://www.instagram.com/webblaze.romania/"><img src={instagramm} alt="instagrammLogo"/></a>
             </div>
             <button className="bmBtn btnProp">Contact us</button>
         </section>

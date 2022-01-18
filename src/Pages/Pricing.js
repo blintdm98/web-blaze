@@ -23,7 +23,7 @@ export default function Pricing(){
             <div className="ellipse6"></div> */}
             {/* <div className="ellipse3"></div> */}
             <div className="ellipse2"></div>
-            <div className="ellipse1"></div>
+            <div className="ellipse1 hidden"></div>
             <section className="container">
                 <div className="partTitle priceTitle">
                     <h1>The Price?</h1>
@@ -38,7 +38,7 @@ export default function Pricing(){
                 <div className="box-2-consulting">
                     <div className="consultingBox">
                         <Link to="/business"><h1  className="cursor">Business Consulting</h1></Link>
-                        <p>blablabla</p>
+                        {/* <p>blablabla</p> */}
                         <Link to="/business">
                             <img className="firstimg cursor" src={box1img} alt="box1img"/>
                             <img className="secondimg cursor" src={fingericon} alt="fingericon"/>
@@ -48,7 +48,7 @@ export default function Pricing(){
                 <div className="box-3-consulting">
                     <div className="consultingBox">
                         <Link to="/development"><h1 className="cursor">Web & Soft Development</h1></Link>
-                        <p>blablabla</p>
+                        {/* <p>blablabla</p> */}
                         <Link to="/development"><img className="firstimg cursor" src={box2img} alt="box2img"/>
                         <img className="secondimg cursor" src={fingericon} alt="fingericon"/>
                         </Link>
@@ -57,7 +57,7 @@ export default function Pricing(){
                 <div className="box-4-consulting bgtrans">
                 <div className="consultingBox ">
                         <Link to="/marketing"><h1 className="cursor bgtrans">Branding and Marketing</h1></Link>
-                        <p>blablabla</p>
+                        {/* <p>blablabla</p> */}
                         <Link to="/marketing"><img className="firstimg cursor" src={box3img} alt="box3img"/>
                         <img className="secondimg cursor" src={fingericon} alt="fingericon"/>
                         </Link>

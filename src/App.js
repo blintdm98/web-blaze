@@ -9,7 +9,7 @@ import Business from "./Pages/Business";
 import Development from "./Pages/Development";
 import Marketing from "./Pages/Marketing";
 import logo1 from "./Pages/Images/logo1.jpg";
-import logo2 from "./Pages/Images/logo2.png";
+import logo2 from "./Pages/Images/logo2.svg";
 import google from "./Pages/Images/google.svg";
 import instagramm from "./Pages/Images/instagramm.svg";
 import facebook from "./Pages/Images/facebook.svg";
@@ -70,13 +70,15 @@ function App() {
             <div className="box-3 boxPadding">
               <h3 className="check">Check us out <br/>on</h3>
               <p>
-                <img src={google} alt="googleLogo"/>
-                <img src={whatsapp} alt="whatsappLogo"/>
+                <a href="https://g.page/web-blaze-romania?share"><img src={google} alt="googleLogo"/></a>
+                <a><img src={whatsapp} alt="whatsappLogo"/></a>
               </p>
               <p>
-                <img src={facebook} alt="facebookLogo"/>
-                <img src={instagramm} alt="instagrammLogo"/>
-                <img src={linkedin} alt="linkedinLogo"/>
+                <a href="https://www.facebook.com/webblaze.romania/">
+                  <img src={facebook} alt="facebookLogo"/>
+                </a>
+                <a href="https://www.instagram.com/webblaze.romania/"><img src={instagramm} alt="instagrammLogo"/></a>
+                <a href="https://www.linkedin.com/company/web-blaze"><img src={linkedin} alt="linkedinLogo"/></a>                                
               </p>
             </div>
             <div className="box-4 boxPadding">
